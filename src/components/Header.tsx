@@ -8,7 +8,7 @@ export const Header = () => {
 
   return (
     <div className={`sticky  ${scrollDirection === "down" ? "-top-24" : "top-0"} h-24 flex justify-center items-center transition-all duration-500 bg-transparent z-50`}>
-      <div className="w-4/6 h-16 dark:bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-sm dark:bg-opacity-10 bg-opacity-10 border-2 border-primary-100 dark:border-primary-100 dark:shadow-primary-100/40 shadow-primary-100/20 shadow-lg flex justify-between items-center py-4 px-6 rounded-2xl mt-8 ">
+      <div className="w-4/6 h-16 dark:bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-sm dark:bg-opacity-10 bg-opacity-10 border-2 border-primary-100 dark:border-primary-100 dark:shadow-primary-100/40 shadow-primary-100/20 shadow-lg flex justify-between items-center py-4 px-6 rounded-2xl mt-8 max-sm:w-5/6 ">
         <a href="" className="font-bold text-2xl text-primary-100 max-sm:text-xl ">
           Portfolio
         </a>
@@ -29,7 +29,7 @@ export const Header = () => {
             Contato
           </Link>
         </nav>
-        <div className="flex gap-10">
+        <div className="flex gap-10 max-sm:gap-5 justify-center items-center">
           <Switcher />
           <MenuMobile />
         </div>

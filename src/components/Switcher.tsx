@@ -11,5 +11,5 @@ export const Switcher = () => {
     setDarkMode(checked);
   };
 
-  return <DarkModeSwitch onChange={toggleDarkMode} checked={isDarkMode} moonColor="black" sunColor="white" />;
+  return <DarkModeSwitch onChange={toggleDarkMode} checked={isDarkMode} moonColor="black" sunColor="white" size={27} />;
 };
