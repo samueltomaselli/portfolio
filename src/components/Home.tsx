@@ -4,7 +4,7 @@ import avatar3 from "../assets/avatar3.png";
 
 export const Home = () => {
   return (
-    <div id="home" className="w-full bg-white dark:bg-primary-900 dark:text-primary-100 text-primary-100 z-10 pb-20 max-sm:gap-20 max-sm:pb-10">
+    <div id="home" className="w-full bg-white dark:bg-primary-900 dark:text-primary-100 text-primary-100 z-10 pb-20 pt-20 max-sm:gap-20 max-sm:pb-10 max-sm:pt-2">
       <Fade delay={100} className="flex justify-center">
         <div className="w-4/6 flex justify-between items-center max-md:flex-col max-md:justify-center max-lg:gap-12 max-sm:w-11/12">
           <div className="w-2/3 flex flex-col gap-4">
