@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .skill-box {
+    @apply w-[10rem] h-[8rem] font-semibold border-2 border-primary-100 flex flex-col justify-center items-center gap-3 rounded-lg shadow-primary-100 shadow-md hover:shadow-xl hover:shadow-primary-100 hover:cursor-pointer hover:scale-105;
+  }
+  .skill-icon {
+    @apply text-6xl text-primary-100;
+  }
+  .project-box-1 {
+    @apply flex justify-center items-center h-48 border-2 border-primary-100 rounded-xl hover:cursor-pointer hover:scale-105 shadow-sm shadow-primary-100 max-lg:w-2/3 max-sm:w-full;
+  }
+  .project-box-2 {
+    @apply flex justify-center items-center h-56 border-2 border-primary-100  rounded-xl hover:cursor-pointer hover:scale-105 shadow-sm shadow-primary-100 max-lg:w-2/3 max-sm:w-full;
+  }
+}
