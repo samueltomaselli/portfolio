@@ -7,7 +7,7 @@ import projeto4 from "../assets/projeto-4.png";
 export const Projects = () => {
   return (
     <div id="projects" className="projects dark:bg-primary-900 text-white flex flex-col items-center gap-24 pt-20 pb-20 z-10 max-sm:gap-16 max-sm:pt-10 max-sm:pb-10">
-      <Fade delay={100} className="w-4/6 flex flex-col items-center">
+      <Fade delay={100} className="w-4/6 flex flex-col items-center max-sm:w-4/5">
         <h1 className="text-4xl font-bold dark:text-white text-primary-900 max-sm:text-3xl">Projetos ✍️</h1>
         <div className="w-full flex flex-col gap-16">
           <div className="grid grid-cols-3 gap-4 max-lg:flex flex-col">

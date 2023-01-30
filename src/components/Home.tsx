@@ -4,9 +4,9 @@ import avatar3 from "../assets/avatar3.png";
 
 export const Home = () => {
   return (
-    <div id="home" className="w-full bg-white dark:bg-primary-900 dark:text-primary-100 text-primary-100 z-10 pb-20 pt-20 max-sm:gap-20 max-sm:pb-10 max-lg:pt-10 ">
+    <div id="home" className="w-full bg-white dark:bg-primary-900 dark:text-primary-100 text-primary-100 z-10 pb-20 pt-20 max-sm:gap-20 max-sm:pb-10 max-lg:pt-5 ">
       <Fade delay={100} className="flex justify-center">
-        <div className="w-2/3 flex flex-col gap-8 items-center justify-center">
+        <div className="w-4/5 flex flex-col gap-8 items-center justify-center">
           <h1 className="text-6xl font-bold dark:text-white text-primary-900 mt-10 flex flex-col gap-2 items-center justify-center text-center max-lg:text-3xl">
             Olá 👋, me chamo
             <span className="text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-100 to-primary-800 text-center max-lg:text-5xl">
