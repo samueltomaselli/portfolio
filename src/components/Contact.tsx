@@ -5,7 +5,7 @@ export const Contact = () => {
   return (
     <div id="contact" className="dark:bg-primary-900 text-white flex flex-col items-center gap-24 pt-20 pb-24 z-10 max-sm:gap-16 max-sm:pt-10 max-sm:pb-20 ">
       <Fade delay={100} className="w-4/6 flex flex-col items-center max-sm:w-4/5">
-        <h1 className="text-4xl font-bold dark:text-white text-primary-900 max-sm:text-3xl">Contato 🤙</h1>
+        <h1 className="text-4xl font-bold dark:text-white text-primary-900 max-sm:text-3xl">Contact me 🤙</h1>
         <div className="text-black flex gap-20 max-lg:flex-col">
           <a href="mailto:samueltomasellidev@gmail.com">
             <div className="flex flex-col justify-center items-center dark:text-white hover:scale-110">
@@ -18,7 +18,7 @@ export const Contact = () => {
             <div className="flex flex-col justify-center items-center dark:text-white hover:scale-110">
               <AiFillGithub className="text-6xl text-primary-100 mb-2" />
               <h1 className="font-bold text-xl">Github</h1>
-              <h2 className="font-normal">@szcore</h2>
+              <h2 className="font-normal">@samueltomaselli</h2>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/samuel-tomaselli-637924224/">

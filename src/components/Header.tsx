@@ -4,7 +4,6 @@ import { Link } from "react-scroll";
 import { MenuMobile } from "./MenuMobile";
 import { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
-import { Fade } from "react-awesome-reveal";
 
 export const Header = () => {
   const scrollDirection = useScrollDirection();
@@ -24,16 +23,16 @@ export const Header = () => {
               Home
             </Link>
             <Link to="about" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
-              Sobre mim
+              About
             </Link>
             <Link to="skills" spy={false} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
-              Habilidades
+              Skills
             </Link>
             <Link to="projects" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
-              Projetos
+              Projects
             </Link>
             <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
-              Contato
+              Contact
             </Link>
           </nav>
         </div>
@@ -48,16 +47,16 @@ export const Header = () => {
               Home
             </Link>
             <Link to="about" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100">
-              Sobre mim
+              About
             </Link>
             <Link to="skills" spy={false} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100">
-              Habilidades
+              Skills
             </Link>
             <Link to="projects" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100">
-              Projetos
+              Projects
             </Link>
             <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100">
-              Contato
+              Contact
             </Link>
           </nav>
           <div className="flex gap-10 max-sm:gap-5 justify-center items-center">

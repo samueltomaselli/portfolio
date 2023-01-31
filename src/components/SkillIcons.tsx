@@ -1,6 +1,4 @@
-import { ReactNode } from "react";
 import { IconBaseProps } from "react-icons";
-import { FiPlus } from "react-icons/fi";
 
 type ButtonIconProps = {
   title: string;
@@ -9,7 +7,7 @@ type ButtonIconProps = {
 
 export const SkillIcon = (props: ButtonIconProps) => {
   return (
-    <div className="skill-box ">
+    <div className="w-[12rem] h-[10rem] font-semibold border-2 border-primary-100 flex flex-col justify-center items-center gap-3 rounded-lg shadow-primary-100 shadow-md hover:shadow-xl hover:shadow-primary-100 hover:cursor-pointer hover:scale-105">
       <>{props.icon}</>
       {props.title}
     </div>
