@@ -1,19 +1,16 @@
 import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-export const MenuMobile = () => {
-  const [menu, setMenu] = useState<boolean>(false);
+type IProps = {
+  menu?: boolean;
+  setMenu: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
-  useEffect(() => {
-    console.log(menu);
-  }, [setMenu, menu]);
-
+export const MenuMobile = ({ menu, setMenu }: IProps) => {
   return (
     <>
-      {menu && <div className="absolute bg-white w-10 right-0 ">Olá</div>}
-
-      <button onClick={() => setMenu(!menu)} className="flex justify-center items-center 2xl:hidden text-3xl dark:text-white">
-        <GiHamburgerMenu />
+      <button onClick={() => setMenu(!menu)} className="relative z-50 flex justify-center items-center 2xl:hidden text-3xl dark:text-white">
+        <GiHamburgerMenu className={menu === true ? "invisible" : "block"} />
       </button>
     </>
   );

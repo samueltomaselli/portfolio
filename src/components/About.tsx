@@ -16,7 +16,7 @@ export const About = () => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quo odit aliquid fuga dolores omnis alias iste sint quia quibusdam quidem nulla natus voluptate,
               assumenda hic sequi reprehenderit laboriosam et?
             </p>
-            <p className="text-lg dark:text-white text-start font-medium tracking-widest max-sm:text-sm">
+            <p className="text-lg dark:text-white text-start font-medium tracking-widest max-sm:text-base">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis debitis nostrum sapiente quibusdam id vero dolor assumenda consequatur nemo, voluptate, quasi
               possimus, quaerat repellat. Laborum nihil corporis cupiditate hic nostrum.
             </p>
