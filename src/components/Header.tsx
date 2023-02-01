@@ -45,8 +45,8 @@ export const Header = () => {
       )}
       <div className={`sticky  ${scrollDirection === "down" ? "-top-24" : "top-0"} h-24 flex justify-center items-center transition-all duration-500 bg-transparent z-40`}>
         <div className="w-4/6 h-16 dark:bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-sm dark:bg-opacity-10 bg-opacity-10 border-2 border-primary-100 dark:border-primary-100 dark:shadow-primary-100/40 shadow-primary-100/20 shadow-lg flex justify-between items-center py-4 px-6 rounded-2xl mt-8 max-sm:w-5/6 ">
-          <a href="" className="font-bold text-2xl text-primary-100 max-sm:text-xl ">
-            Portfolio
+          <a href="" className="font-extrabold text-2xl p-1 px-3 border-2 rounded-lg border-primary-100 shadow-sm shadow-primary-100">
+            <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-primary-100 to-primary-800">ST</h1>
           </a>
           <nav className="font-primary flex gap-10 text-lg uppercase font-bold text-gray-800 dark:text-white max-2xl:hidden">
             <Link to="home" spy={true} smooth={true} offset={-100} duration={500} className="cursor-pointer hover:text-primary-100 hover:scale-105 transition-all">
