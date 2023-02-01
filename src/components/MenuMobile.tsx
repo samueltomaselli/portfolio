@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 type IProps = {

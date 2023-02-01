@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import { MenuMobile } from "./MenuMobile";
 import { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { Fade } from "react-awesome-reveal";
 
 export const Header = () => {
   const scrollDirection = useScrollDirection();
@@ -13,28 +14,30 @@ export const Header = () => {
     <>
       {menu && (
         <div className="flex justify-center items-center flex-col bg-gray-900 fixed z-50 right-0 top-0 h-screen w-full text-black opacity-95">
-          <div className="absolute right-12 top-10 text-white">
-            <button onClick={() => setMenu(!menu)}>
-              <AiFillCloseCircle className="text-5xl" />
-            </button>
-          </div>
-          <nav className="font-primary text-white opacity-100 flex flex-col items-center justify-center gap-10 text-3xl font-bold">
-            <Link to="home" spy={true} smooth={true} offset={-100} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
-              Home
-            </Link>
-            <Link to="about" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
-              About
-            </Link>
-            <Link to="skills" spy={false} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
-              Skills
-            </Link>
-            <Link to="projects" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
-              Projects
-            </Link>
-            <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
-              Contact
-            </Link>
-          </nav>
+          <Fade delay={150} duration={1500}>
+            <div className="absolute right-12 top-10 text-white">
+              <button onClick={() => setMenu(!menu)}>
+                <AiFillCloseCircle className="text-5xl" />
+              </button>
+            </div>
+            <nav className="font-primary text-white opacity-100 flex flex-col items-center justify-center gap-10 text-3xl font-bold">
+              <Link to="home" spy={true} smooth={true} offset={-100} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
+                Home
+              </Link>
+              <Link to="about" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
+                About
+              </Link>
+              <Link to="skills" spy={false} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
+                Skills
+              </Link>
+              <Link to="projects" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
+                Projects
+              </Link>
+              <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
+                Contact
+              </Link>
+            </nav>
+          </Fade>
         </div>
       )}
       <div className={`sticky  ${scrollDirection === "down" ? "-top-24" : "top-0"} h-24 flex justify-center items-center transition-all duration-500 bg-transparent z-40`}>
@@ -43,19 +46,19 @@ export const Header = () => {
             Portfolio
           </a>
           <nav className="font-primary flex gap-10 text-lg uppercase font-bold text-gray-800 dark:text-white max-2xl:hidden">
-            <Link to="home" spy={true} smooth={true} offset={-100} duration={500} className="cursor-pointer hover:text-primary-100">
+            <Link to="home" spy={true} smooth={true} offset={-100} duration={500} className="cursor-pointer hover:text-primary-100 hover:scale-105 transition-all">
               Home
             </Link>
-            <Link to="about" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100">
+            <Link to="about" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100 hover:scale-105 transition-all">
               About
             </Link>
-            <Link to="skills" spy={false} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100">
+            <Link to="skills" spy={false} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100 hover:scale-105 transition-all">
               Skills
             </Link>
-            <Link to="projects" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100">
+            <Link to="projects" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100 hover:scale-105 transition-all">
               Projects
             </Link>
-            <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100">
+            <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100 hover:scale-105 transition-all">
               Contact
             </Link>
           </nav>
