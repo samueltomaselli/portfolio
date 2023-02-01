@@ -3,12 +3,15 @@ import { FaReact, FaGithub, FaCss3Alt, FaGitAlt, FaSass } from "react-icons/fa";
 import { AiFillHtml5 } from "react-icons/ai";
 import { SiTailwindcss, SiJavascript, SiTypescript } from "react-icons/si";
 import { SkillIcon } from "./SkillIcons";
+import { useTranslation } from "react-i18next";
 
 export const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <div id="skills" className="bg-white text-white dark:bg-primary-900 flex flex-col items-center gap-24 pt-20 pb-20 z-10 max-sm:gap-16 max-sm:pt-10 max-sm:pb-10">
       <Fade delay={100} duration={1500} className="w-4/6 flex flex-col items-center max-sm:w-4/5">
-        <h1 className="text-4xl font-bold  dark:text-white text-primary-900 max-sm:text-3xl">Skills 💪</h1>
+        <h1 className="text-4xl font-bold  dark:text-white text-primary-900 max-sm:text-3xl">{t("skills-title")}</h1>
         <Slide duration={1500} triggerOnce>
           <div className="w-full flex flex-wrap justify-center items-center gap-10 dark:text-white text-primary-900">
             <SkillIcon title="HTML5" icon={<AiFillHtml5 className="text-6xl text-primary-100" />} />

@@ -1,0 +1,28 @@
+{
+  "translation": {
+    "header-home": "Home",
+    "header-about": "About",
+    "header-skills": "Skills",
+    "header-projects": "Projects",
+    "header-contact": "Contact",
+
+    "home-title": "Hi 👋, my name is",
+    "home-subtitle": "Front-end Developer",
+    "home-button-1": "Explore projects",
+    "home-button-2": "Download CV",
+
+    "about-title": "About me ✌️",
+    "about-1": "I am am 17 years old, and have always been an enthusiast in the technology field, finding my true passion in programming and software development. Since then, I have been studying and specializing, with a main focus on front-end web development.",
+    "about-2": "I always seek ways to expand my knowledge and improve my skills in the technology world, as I believe it is a constantly evolving field with numerous opportunities and potential for the future. My goal is to continue developing creative projects and become a full-stack professional.",
+
+    "skills-title": "Skills 💪",
+
+    "projects-title": "Projects ✍️",
+    "project-box-1": "Visit website",
+    "project-box-2": "Repository",
+
+    "contact-title": "Contact-me 🤙",
+
+    "footer-title": "All rights reserved © 2023."
+  }
+}

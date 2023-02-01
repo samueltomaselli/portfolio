@@ -5,10 +5,13 @@ import { MenuMobile } from "./MenuMobile";
 import { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { Fade } from "react-awesome-reveal";
+import { LangSwitcher } from "./LangSwitcher";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
   const scrollDirection = useScrollDirection();
   const [menu, setMenu] = useState<boolean>(false);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -22,19 +25,19 @@ export const Header = () => {
             </div>
             <nav className="font-primary text-white opacity-100 flex flex-col items-center justify-center gap-10 text-3xl font-bold">
               <Link to="home" spy={true} smooth={true} offset={-100} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
-                Home
+                {t("header-home")}
               </Link>
               <Link to="about" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
-                About
+                {t("header-about")}
               </Link>
               <Link to="skills" spy={false} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
-                Skills
+                {t("header-skills")}
               </Link>
               <Link to="projects" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
-                Projects
+                {t("header-projects")}
               </Link>
               <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100" onClick={() => setMenu(!menu)}>
-                Contact
+                {t("header-contact")}
               </Link>
             </nav>
           </Fade>
@@ -47,22 +50,23 @@ export const Header = () => {
           </a>
           <nav className="font-primary flex gap-10 text-lg uppercase font-bold text-gray-800 dark:text-white max-2xl:hidden">
             <Link to="home" spy={true} smooth={true} offset={-100} duration={500} className="cursor-pointer hover:text-primary-100 hover:scale-105 transition-all">
-              Home
+              {t("header-home")}
             </Link>
             <Link to="about" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100 hover:scale-105 transition-all">
-              About
+              {t("header-about")}
             </Link>
             <Link to="skills" spy={false} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100 hover:scale-105 transition-all">
-              Skills
+              {t("header-skills")}
             </Link>
             <Link to="projects" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100 hover:scale-105 transition-all">
-              Projects
+              {t("header-projects")}
             </Link>
             <Link to="contact" spy={true} smooth={true} offset={-50} duration={500} className="cursor-pointer hover:text-primary-100 hover:scale-105 transition-all">
-              Contact
+              {t("header-contact")}
             </Link>
           </nav>
           <div className="flex gap-10 max-sm:gap-5 justify-center items-center">
+            <LangSwitcher />
             <Switcher />
             <MenuMobile menu={menu} setMenu={setMenu} />
           </div>
