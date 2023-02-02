@@ -17,7 +17,7 @@ export const LangSwitcher = () => {
 
   return (
     <button onClick={handleChangeLanguage}>
-      <HiLanguage className="text-3xl dark:text-white" />
+      <HiLanguage className="text-3xl dark:text-white max-[330px]:text-4xl" />
     </button>
   );
 };
