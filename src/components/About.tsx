@@ -6,7 +6,7 @@ export const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="about" className="dark:bg-primary-900 text-white flex flex-col items-center gap-24 pt-10 pb-20 z-10 max-sm:gap-16  max-sm:pb-10">
+    <div id="about" className="dark:bg-primary-900 text-white flex flex-col items-center gap-24 pt-10 pb-20 z-10 max-sm:gap-16 max-sm:pb-10">
       <Fade delay={100} duration={1500} className="w-4/6 flex flex-col items-center max-sm:w-4/5">
         <h1 className="text-4xl font-bold dark:text-white text-primary-900 max-sm:text-3xl">{t("about-title")}</h1>
         <div className="full rounded-xl flex items-center gap-16 dark:text-white text-primary-900 max-lg:flex-col">
