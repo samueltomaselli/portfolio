@@ -6,17 +6,27 @@ import { SiTailwindcss, SiJavascript, SiTypescript } from "react-icons/si";
 type Props = {
   img: string;
   title: string;
-  subtitle: string;
+  type?: string;
   height: string;
 };
 
-export const ProjectBox = ({ img, title, subtitle, height }: Props) => {
+export const ProjectBox = ({ img, title, type, height }: Props) => {
   const { t } = useTranslation();
 
   return (
     <div className="hover:scale-105 hover:cursor-pointer">
-      <h1 className="text-center text-2xl font-semibold text-primary-100 mb-2">{title}</h1>
-      <h4 className="text-center text-base mb-5 font-medium">{subtitle}</h4>
+      <h1 className="text-center text-2xl font-bold text-primary-100 mb-2">{title}</h1>
+      <h4 className="flex justify-center text-xl gap-5 mb-5 font-medium">
+        {type === "vanilla" ? (
+          <>
+            <AiFillHtml5 /> <FaCss3Alt /> <SiJavascript />
+          </>
+        ) : (
+          <>
+            <FaReact /> <SiTypescript /> <SiTailwindcss />
+          </>
+        )}
+      </h4>
       <div
         className={`flex justify-center items-center h-${height} border-2 border-primary-100 rounded-xl  shadow-sm transition-all shadow-primary-100 max-lg:w-2/3 max-sm:w-full mb-10 relative`}
       >
