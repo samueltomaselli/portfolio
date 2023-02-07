@@ -1,6 +1,5 @@
 import { Fade, Slide } from "react-awesome-reveal";
-import { FaReact, FaGithub, FaCss3Alt, FaGitAlt, FaSass } from "react-icons/fa";
-import { AiFillHtml5 } from "react-icons/ai";
+import { FaReact, FaGithub, FaCss3Alt, FaHtml5, FaGitAlt, FaSass } from "react-icons/fa";
 import { SiTailwindcss, SiJavascript, SiTypescript } from "react-icons/si";
 import { SkillIcon } from "./SkillIcons";
 import { useTranslation } from "react-i18next";
@@ -14,7 +13,7 @@ export const Skills = () => {
         <h1 className="text-4xl font-bold  dark:text-white text-primary-900 max-sm:text-3xl">{t("skills-title")}</h1>
         <Slide duration={1500} triggerOnce>
           <div className="w-full flex flex-wrap justify-center items-center gap-10 dark:text-white text-primary-900">
-            <SkillIcon title="HTML5" icon={<AiFillHtml5 className="text-6xl text-primary-100" />} />
+            <SkillIcon title="HTML5" icon={<FaHtml5 className="text-6xl text-primary-100" />} />
             <SkillIcon title="CSS3" icon={<FaCss3Alt className="text-6xl text-primary-100" />} />
             <SkillIcon title="Sass" icon={<FaSass className="text-6xl text-primary-100" />} />
             <SkillIcon title="TailwindCSS" icon={<SiTailwindcss className="text-6xl text-primary-100" />} />

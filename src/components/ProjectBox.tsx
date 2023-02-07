@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { FaReact, FaCss3Alt } from "react-icons/fa";
-import { AiFillHtml5 } from "react-icons/ai";
+import { FaReact, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { SiTailwindcss, SiJavascript, SiTypescript } from "react-icons/si";
 
 type Props = {
@@ -10,7 +9,7 @@ type Props = {
   height: string;
 };
 
-export const ProjectBox = ({ img, title, type, height }: Props) => {
+export const ProjectBox = ({ img, title, type }: Props) => {
   const { t } = useTranslation();
 
   return (
@@ -19,7 +18,7 @@ export const ProjectBox = ({ img, title, type, height }: Props) => {
       <h4 className="flex justify-center text-xl gap-5 mb-5 font-medium">
         {type === "vanilla" ? (
           <>
-            <AiFillHtml5 /> <FaCss3Alt /> <SiJavascript />
+            <FaHtml5 /> <FaCss3Alt /> <SiJavascript />
           </>
         ) : (
           <>
@@ -28,7 +27,7 @@ export const ProjectBox = ({ img, title, type, height }: Props) => {
         )}
       </h4>
       <div
-        className={`flex justify-center items-center h-${height} border-2 border-primary-100 rounded-xl  shadow-sm transition-all shadow-primary-100 max-lg:w-2/3 max-sm:w-full mb-10 relative`}
+        className={`flex justify-center items-center h-56 border-2 border-primary-100 rounded-xl  shadow-sm transition-all shadow-primary-100 max-lg:w-2/3 max-sm:w-full mb-10 relative max-[400px]:h-52`}
       >
         <div className="absolute w-full h-full bg-gray-800/80 transition-opacity delay-150 opacity-0 z-10 rounded-xl border-2 dark:border-black hover:opacity-100 text-primary-100 font-bold text-xl flex flex-col justify-center items-center gap-4">
           <a href="" className="hover:scale-105">

@@ -8,9 +8,9 @@ export const Home = () => {
   return (
     <div
       id="home"
-      className="h-[calc(100vh-96px)] w-full bg-white dark:bg-primary-900 dark:text-primary-100 text-primary-100 z-10 pt-20 pb-10 max-sm:gap-20 max-sm:pb-10 max-lg:pt-10 max-sm:pt-5 "
+      className="h-[calc(100vh-96px)] flex justify-center items-center w-full bg-white dark:bg-primary-900 dark:text-primary-100 text-primary-100 z-10  pb-10 max-sm:gap-20 max-sm:pb-10 max-lg:pt-10 max-sm:pt-5 "
     >
-      <Fade delay={100} duration={1500} className="flex justify-center">
+      <Fade delay={100} duration={1500} className="flex justify-center w-full">
         <div className="w-4/5 flex flex-col items-center justify-center">
           <h1 className="text-6xl font-bold dark:text-white text-primary-900 mt-10 mb-5 flex flex-col gap-2 items-center justify-center text-center max-lg:text-3xl">
             {t("home-title")}
