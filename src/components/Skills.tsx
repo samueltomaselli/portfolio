@@ -1,6 +1,6 @@
 import { Fade, Slide } from "react-awesome-reveal";
 import { FaReact, FaGithub, FaCss3Alt, FaHtml5, FaGitAlt, FaSass } from "react-icons/fa";
-import { SiTailwindcss, SiJavascript, SiTypescript } from "react-icons/si";
+import { SiTailwindcss, SiJavascript, SiTypescript, SiVite } from "react-icons/si";
 import { SkillIcon } from "./SkillIcons";
 import { useTranslation } from "react-i18next";
 
@@ -22,6 +22,7 @@ export const Skills = () => {
             <SkillIcon title="React.js" icon={<FaReact className="text-6xl text-primary-100" />} />
             <SkillIcon title="Github" icon={<FaGithub className="text-6xl text-primary-100" />} />
             <SkillIcon title="Git" icon={<FaGitAlt className="text-6xl text-primary-100" />} />
+            <SkillIcon title="Vite" icon={<SiVite className="text-6xl text-primary-100" />} />
           </div>
         </Slide>
       </Fade>
