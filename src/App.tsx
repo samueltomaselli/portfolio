@@ -10,7 +10,7 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App font-primary bg bg-lightPrimary dark:bg-primary-900 selection:bg-primary-100 selection:text-black ">
+      <div className="App font-primary dark:bg-primary-900 selection:bg-primary-100 selection:text-black ">
         <div>
           <Header />
           <Home />

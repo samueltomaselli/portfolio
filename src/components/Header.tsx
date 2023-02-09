@@ -18,7 +18,7 @@ export const Header = () => {
     <>
       {menu && (
         <div className="flex justify-center items-center flex-col bg-gray-900 fixed z-50 right-0 top-0 h-screen w-full text-black opacity-95">
-          <Fade delay={150} duration={1500}>
+          <Fade delay={150} duration={1000}>
             <div className="absolute right-7 top-7 text-white">
               <button onClick={() => setMenu(!menu)}>
                 <AiFillCloseCircle className="text-5xl" />
@@ -48,7 +48,7 @@ export const Header = () => {
         </div>
       )}
       <div className={`sticky  ${scrollDirection === "down" ? "-top-24" : "top-0"} h-24 flex justify-center items-center transition-all duration-500 bg-transparent z-40`}>
-        <div className="w-4/6 h-16 dark:bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-sm dark:bg-opacity-10 bg-opacity-10 border-2 border-primary-100 dark:border-primary-100 dark:shadow-primary-100/40 shadow-primary-100/20 shadow-lg flex justify-between items-center py-4 px-6 rounded-2xl mt-8 max-sm:w-5/6 ">
+        <div className="w-4/6 max-w-5xl h-16 dark:bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-sm dark:bg-opacity-10 bg-opacity-10 border-2 border-primary-100 dark:border-primary-100 dark:shadow-primary-100/40 shadow-primary-100/20 shadow-lg flex justify-between items-center py-4 px-6 rounded-2xl mt-8 max-sm:w-5/6 ">
           <a href="" className="font-extrabold text-3xl rounded-lg border-primary-100 flex items-center gap-1">
             <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-primary-100 to-primary-800">ST</h1>
             <FaCode className="text-primary-800" />
