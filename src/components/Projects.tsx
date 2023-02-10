@@ -17,25 +17,26 @@ export const Projects = () => {
         <h1 className="text-4xl font-bold dark:text-white text-primary-900 max-sm:text-3xl">{t("projects-title")}</h1>
         <div className="w-full rounded-xl flex flex-col justify-start items-start gap-24 dark:text-white text-primary-900 max-lg:flex-col">
           <Slide delay={100} duration={1500} triggerOnce>
-            <ProjectBox img={projeto2} title={"Hertel Advocacia"} type={"vanilla"} reverse={true} site={true}>
-              Sendo minha primeira experiência como freelancer, o website Hertel Advocacia busca oferecer aos clientes uma plataforma intuitiva e acessível, permitindo que se
-              obtenham informações precisas sobre os serviços e especializações do escritório de maneira ágil e eficiente.
+            <ProjectBox img={projeto2} title={"Hertel Advocacia"} type={"vanilla"} reverse={true} urls={{ link: "https://www.hertel.com.br/" }}>
+              {t("HertelAdvocacia-content")}
             </ProjectBox>
-            <ProjectBox img={projeto3} title={"LatestNews"} type={"react"} site={false}>
-              LatestNews é uma aplicação que, através da API NewsApi, fornece notícias atualizadas e com opção de busca e filtro por título, autor e descrição, tornando fácil a
-              busca por notícias relevantes e atuais.
+            <ProjectBox img={projeto3} title={"LatestNews"} type={"react"} urls={{ github: "https://github.com/samueltomaselli/LatestNews" }}>
+              {t("LatestNews-content")}
             </ProjectBox>
-            <ProjectBox img={projeto4} title={"TakeNotes"} type={"react"} reverse={true} site={true}>
-              TakeNotes é um aplicativo de anotações que permite que você adicione, edite e exclua suas ideias e pensamentos de forma fácil e eficiente. Com ele, você pode manter
-              suas anotações organizadas e acessíveis a todo momento.
+            <ProjectBox
+              img={projeto4}
+              title={"TakeNotes"}
+              type={"react"}
+              reverse={true}
+              urls={{ github: "https://github.com/samueltomaselli/TakeNotes", link: "https://take-notes-web.vercel.app/" }}
+            >
+              {t("TakeNotes-content")}
             </ProjectBox>
-            <ProjectBox img={projeto6} title={"MoviesTDB"} type={"react"} site={false}>
-              MoviesDTB é uma aplicação que oferece uma ampla seleção de filmes, graças à sua integração com a API MoviesDB. Com uma interface intuitiva, os usuários podem
-              rapidamente encontrar informações detalhadas sobre filmes, incluindo sinopse, nota do público, duração, custo e arrecadação.
+            <ProjectBox img={projeto6} title={"MoviesTDB"} type={"react"} urls={{ github: "https://github.com/samueltomaselli/MoviesDTB" }}>
+              {t("MoviesTDB-content")}
             </ProjectBox>
-            <ProjectBox img={projeto5} title={"WeatherWeb"} type={"react"} reverse={true} site={false}>
-              Integrado com a API OpenWeatherMap, WeatherWeb é uma aplicação que oferece informações sobre o tempo em qualquer lugar do mundo. Através de uma interface simples, os
-              usuários podem obter informações precisas que incluem clima, temperatura, velocidade do vento e umidade do ar.
+            <ProjectBox img={projeto5} title={"WeatherWeb"} type={"react"} reverse={true} urls={{ github: "https://github.com/samueltomaselli/WeatherWeb" }}>
+              {t("WeatherWeb-content")}
             </ProjectBox>
           </Slide>
         </div>

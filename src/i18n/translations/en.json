@@ -20,6 +20,11 @@
     "projects-title": "Projects ✍️",
     "project-box-1": "Visit website",
     "project-box-2": "Repository",
+    "HertelAdvocacia-content": "Being my first experience as a freelancer, the Hertel Advocacia website seeks to offer clients an intuitive and accessible platform, allowing them to obtain accurate information about the services and specializations of the office in a fast and efficient manner.",
+    "LatestNews-content": "LatestNews is an application that, through the NewsApi API, provides updated news and with a search and filter option by title, author and description, making it easy to search for relevant and current news.",
+    "TakeNotes-content": "TakeNotes is a note-taking app that allows you to add, edit, and delete your ideas and thoughts easily and efficiently. With it, you can keep your notes organized and accessible at all times.",
+    "MoviesTDB-content": "MoviesDTB is an application that offers a wide selection of movies, thanks to its integration with the TMDB API. With an intuitive interface, users can quickly find detailed information about movies, including synopsis, audience rating, duration, cost and revenue.",
+    "WeatherWeb-content": "Integrated with the OpenWeatherMap API, WeatherWeb is an application that provides weather information anywhere in the world. Through a simple interface, users can obtain accurate data that includes weather, temperature, wind speed, and air humidity.",
 
     "contact-title": "Contact-me 🤙",
 
