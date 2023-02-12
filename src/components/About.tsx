@@ -1,6 +1,6 @@
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
-import photo from "../assets/about-photo.png";
+import photo from "../assets/about/about-photo.png";
 
 export const About = () => {
   const { t } = useTranslation();

@@ -1,11 +1,10 @@
 import { Fade, Slide } from "react-awesome-reveal";
 import { ProjectBox } from "./ProjectBox";
-import projeto1 from "../assets/projeto-1.png";
-import projeto2 from "../assets/projeto-2.png";
-import projeto3 from "../assets/projeto-3.png";
-import projeto4 from "../assets/projeto-4.png";
-import projeto5 from "../assets/projeto-5.png";
-import projeto6 from "../assets/projeto-6.png";
+import projeto2 from "../assets/projects/projeto-2.png";
+import projeto3 from "../assets/projects/projeto-3.png";
+import projeto4 from "../assets/projects/projeto-4.png";
+import projeto5 from "../assets/projects/projeto-5.png";
+import projeto6 from "../assets/projects/projeto-6.png";
 import { useTranslation } from "react-i18next";
 
 export const Projects = () => {

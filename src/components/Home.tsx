@@ -2,6 +2,7 @@ import { Fade } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import { Link } from "react-scroll";
+import cv from "../assets/cv/cv.pdf";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -27,12 +28,13 @@ export const Home = () => {
               smooth={true}
               offset={-50}
               duration={500}
-              className="hover:cursor-pointer p-7 border-2 border-primary-100 dark:border-primarytext-primary-100 text-primary dark:text-white font-extrabold rounded-lg hover:scale-105 transition-all max-lg:p-4 text-center"
+              className="hover:cursor-pointer p-7 border-2 border-primary-100 dark:border-primary text-primary-100 dark:text-white font-extrabold rounded-lg hover:scale-105 transition-all max-lg:p-4 text-center"
             >
               {t("home-button-1")}
             </Link>
             <a
-              href=""
+              href={cv}
+              download
               className="p-7 border-2 bg-primary-100 dark:bg-primary-100 border-primary-100 dark:border-primary-100 text-white font-extrabold rounded-lg hover:scale-105 transition-all max-lg:p-4 text-center"
             >
               {t("home-button-2")}
