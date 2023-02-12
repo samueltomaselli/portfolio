@@ -1,6 +1,7 @@
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
+import { Link } from "react-scroll";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -20,12 +21,16 @@ export const Home = () => {
           </h1>
           <h3 className="text-4xl font-bold mb-10 text-center max-lg:text-2xl">{t("home-subtitle")}</h3>
           <div className="flex gap-10 mb-10 text-xl max-lg:text-lg max-sm:gap-5">
-            <a
-              href=""
-              className="p-7 border-2 border-primary-100 dark:border-primarytext-primary-100 text-primary dark:text-white font-extrabold rounded-lg hover:scale-105 transition-all max-lg:p-4 text-center"
+            <Link
+              to="projects"
+              spy={false}
+              smooth={true}
+              offset={-50}
+              duration={500}
+              className="hover:cursor-pointer p-7 border-2 border-primary-100 dark:border-primarytext-primary-100 text-primary dark:text-white font-extrabold rounded-lg hover:scale-105 transition-all max-lg:p-4 text-center"
             >
               {t("home-button-1")}
-            </a>
+            </Link>
             <a
               href=""
               className="p-7 border-2 bg-primary-100 dark:bg-primary-100 border-primary-100 dark:border-primary-100 text-white font-extrabold rounded-lg hover:scale-105 transition-all max-lg:p-4 text-center"

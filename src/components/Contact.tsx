@@ -27,7 +27,7 @@ export const Contact = () => {
           <a href="https://www.linkedin.com/in/samuel-tomaselli-637924224/">
             <div className="flex flex-col justify-center items-center dark:text-white hover:scale-110 transition-all">
               <AiFillLinkedin className="text-6xl text-primary-100 mb-2" />
-              <h1 className="font-bold text-xl">Linkedin</h1>
+              <h1 className="font-bold text-xl">LinkedIn</h1>
               <h2 className="font-normal text-">Samuel Tomaselli</h2>
             </div>
           </a>
