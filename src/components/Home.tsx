@@ -10,7 +10,7 @@ export const Home = () => {
   return (
     <div
       id="home"
-      className="min-h-[calc(100vh-96px)] flex justify-center max-[400px]:items-start max-[400px]:mt-10 items-center w-full bg-white dark:bg-primary-900 dark:text-primary-100 text-primary-100 z-10 max-sm:gap-20 "
+      className="min-h-[calc(100vh-96px)] flex justify-center max-[400px]:min-h-auto max-[400px]:items-start max-[400px]:mt-10 items-center w-full bg-white dark:bg-primary-900 dark:text-primary-100 text-primary-100 z-10 max-sm:gap-20 "
     >
       <Fade delay={100} duration={1500} className="flex justify-center w-full">
         <div className="w-4/5 max-w-5xl flex flex-col items-center justify-center">
