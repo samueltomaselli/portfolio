@@ -31,7 +31,7 @@ export const Projects = () => {
             >
               {t("TakeNotes-content")}
             </ProjectBox>
-            <ProjectBox img={projeto6} title={"MoviesTDB"} type={"react"} urls={{ github: "https://github.com/samueltomaselli/MoviesDTB" }}>
+            <ProjectBox img={projeto6} title={"MoviesDTB"} type={"react"} urls={{ github: "https://github.com/samueltomaselli/MoviesDTB" }}>
               {t("MoviesTDB-content")}
             </ProjectBox>
             <ProjectBox img={projeto5} title={"WeatherWeb"} type={"react"} reverse={true} urls={{ github: "https://github.com/samueltomaselli/WeatherWeb" }}>
