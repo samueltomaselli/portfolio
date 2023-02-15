@@ -12,7 +12,7 @@ export const About = () => {
         <div className="rounded-xl flex items-center gap-16 dark:text-white text-primary-900 max-lg:flex-col">
           <div className="w-3/5 font-bold flex flex-col gap-5 max-lg:w-full">
             <h2 className="text-3xl text-primary-100 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-100 to-primary-800 max-sm:text-2xl">
-              Samuel Henrique Tomasell
+              Samuel Henrique Tomaselli
             </h2>
             <p className="text-lg dark:text-white text-start font-medium tracking-widest first-line:tracking-widest first-letter:text-5xl first-letter:font-bold dark:first-letter:text-white first-letter:text-black first-letter:mr-3 first-letter:float-left max-sm:text-base">
               {t("about-1")}
